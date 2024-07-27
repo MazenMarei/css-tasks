@@ -97,6 +97,10 @@ section {
   background-color: #f0b90b;
 }
 
+.text-box + img  {
+  box-shadow: 10px 10px 1px  var(--bg-yellow);
+}
+
 
 @media screen and (max-width: 768px) {
   .cont {
