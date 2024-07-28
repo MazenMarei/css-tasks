@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: bold;
+}
+
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.feedback-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feedback-section > span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-style: bold;
+  color: rgb(62, 62, 62, 0.75);
+}
+
+.feedbacks-container {
+  display: flex;
+  width: 800px;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.feedback {
+  display: flex;
+  scroll-snap-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+  flex-direction: column;
+  background-color: rgba(66, 71, 97, 255);
+  padding: 2rem;
+  padding-top: 3.5rem;
+  gap: 1.5rem;
+  position: relative;
+  color: white;
+}
+.feedback::before {
+  position: absolute;
+  content: "\f10d";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  bottom: -10%;
+  right: 10%;
+  font-size: 2.5rem;
+  background-color: aliceblue;
+  border: 1px solid #51505034;
+  color: rgb(227, 0, 0);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.feedback-starts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  list-style: none;
+  color: #ffd43b;
+}
+
+.feedback img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -20%;
+  border: #515050 1px solid;
+}
+
+.feedback-comment {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  text-wrap: balance;
+}
+
+.feedback-user p {
+  font-style: bold;
+  font-weight: 700;
+}
+.feedback-user span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
