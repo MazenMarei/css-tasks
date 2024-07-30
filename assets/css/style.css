@@ -8,116 +8,122 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 200vh;
 }
 
 .app-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  gap: 10rem;
 }
 
 .section-bcakground {
-    position: absolute;
-    top: 0;
-    left: -15%;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: -15%;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
 }
 
 .section-bcakground img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  object-fit: contain;
 }
 
 .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(120deg, rgba(58, 0, 151, 0.719),rgba(98, 0, 255, 0.726));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(58, 0, 151, 0.719),
+    rgba(98, 0, 255, 0.726)
+  );
 }
 
 .app-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 20px;
-    gap: 2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
 
+  color: #fff;
 }
 
 .app-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    font-style: italic;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .app-content p {
-    font-size: 1rem;
-    text-wrap: balance;
-    width: 70%;    
-    line-height: 1.5;
+  font-size: 1rem;
+  text-wrap: balance;
+  width: 70%;
+  line-height: 1.5;
 }
-
-
+.app-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.app-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .app-icons {
-    display: flex;
-    gap: 1rem;
-    width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 1rem;
+  width: 100%;
 }
 .download-btn i {
-    font-size: 3rem ;
+  font-size: 3rem;
 }
 .download-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #ffffff;
-    font-weight: 600;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .download-btn:hover {
-    background-color: #ffffff;
-    color: #000;
+  background-color: #ffffff;
+  color: #000;
 }
 .download-btn span {
-    font-size: .5rem;
+  font-size: 0.5rem;
 }
 .download-btn h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .app-note {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-    list-style: "*";
-    font-style: italic;
-}
-
-@media  (max-width: 768px) {
-    .app-section {
-        flex-direction: column;
-    }
-
-    
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  list-style: "*";
+  font-style: italic;
 }
