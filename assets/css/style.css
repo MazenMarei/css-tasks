@@ -11,119 +11,134 @@ section {
   height: 200vh;
 }
 
-.app-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
+.blog-news-section {
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  gap: 1rem;
+  width: 100%;
+}
+.blog-news-header {
   position: relative;
-  width: 100%;
-  gap: 10rem;
+  width: fit-content;
 }
-
-.section-bcakground {
+.blog-news-header p {
+  color: red;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+.background-text {
   position: absolute;
-  top: 0;
-  left: -15%;
-  z-index: -2;
-  width: 100%;
+  top: -35%;
+  left: 2%;
+  font-size: 3rem !important;
+  color: transparent !important;
+  -webkit-text-stroke: 1px rgba(133, 133, 133, 0.322);
+  word-spacing: 10px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+.blog-news-cards {
   height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
 }
 
-.section-bcakground img {
-  width: 100%;
-  height: 100%;
-  width: 100vw;
-  object-fit: contain;
-}
-
-.background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    120deg,
-    rgba(58, 0, 151, 0.719),
-    rgba(98, 0, 255, 0.726)
-  );
-}
-
-.app-content {
+.news-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  padding: 20px;
-  gap: 2rem;
-  font-family: "Poppins", sans-serif;
-
-  color: #fff;
-}
-
-.app-content h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.app-content p {
-  font-size: 1rem;
-  text-wrap: balance;
-  width: 70%;
-  line-height: 1.5;
-}
-.app-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.app-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.app-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  gap: 1rem;
-  width: 100%;
-}
-.download-btn i {
-  font-size: 3rem;
-}
-.download-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 10px 20px;
   border-radius: 10px;
-  color: #ffffff;
-  font-weight: 600;
-  border: 2px solid #ffffff;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.download-btn:hover {
-  background-color: #ffffff;
-  color: #000;
-}
-.download-btn span {
-  font-size: 0.5rem;
-}
-.download-btn h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 
-.app-note {
+.news-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+.post-section {
+  position: absolute;
+  color: white;
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 50px;
   font-size: 1rem;
-  font-weight: 300;
-  text-align: center;
-  list-style: "*";
-  font-style: italic;
+  top: 0%;
+  left: 5%;
+  transform: translateY(50%);
+  transition: all .5s;
+}
+.post-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: start;
+}
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 70%;
+  font-size: 1rem;
+  color: rgba(3, 3, 3, 0.473);
+  font-weight: 600;
+}
+.post-info i {
+  margin-right: 0.3rem;
+  color: red;
+}
+.post-name {
+  text-align: start;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.pots-description {
+  font-size: 1rem;
+  color: rgba(3, 3, 3, 0.473);
+  font-weight: 500;
+  text-align: start;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.post-read-more {
+  color: rgba(3, 3, 3, 0.473);
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1rem;
+}
+.post-read-more a {
+  color: rgba(39, 39, 39, 0.6);
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.post-read-more a::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 0.3rem;
+  transition: margin-left 0.3s;
+}
+.post-read-more a:hover::after {
+  margin-left: 0.5rem;
+  transition: margin-left 0.3s;
 }
