@@ -42,10 +42,15 @@ section {
 
 .feedbacks-container {
   display: flex;
-  width: 800px;
+  width: 90%;
   gap: 1.5rem;
+  overflow-y: visible;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  min-height: 100%;
+  padding:  10vh 0;
+  scrollbar-width: none;
+  
 }
 
 .feedback {
@@ -54,7 +59,8 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 800px;
+  max-width: 850px;
+  min-width: 400px;
   flex-direction: column;
   background-color: rgba(66, 71, 97, 255);
   padding: 2rem;
@@ -95,7 +101,7 @@ section {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: -20%;
+  top: -15%;
   border: #515050 1px solid;
 }
 
@@ -113,4 +119,25 @@ section {
 .feedback-user span {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.feedback-link-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 1rem;
+  justify-self: center;
+}
+
+.feedback-link-section a {
+  border-radius: 50%;
+  border: 1px solid #51505034;
+  padding: 0.5rem;
+}
+
+.feedback-link-section a:hover {
+  background-color: rgba(66, 71, 97, 255);
 }
