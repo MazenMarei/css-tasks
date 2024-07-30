@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(131, 131, 131, 0.842);
+    gap: .8rem;
+    height: fit-content;
+}
+
+.product-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.product-info {
+    padding: 1rem;
+    position: relative;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-rating {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: row;
+    font-size: .8rem;
+}
+.product-rating ul  {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    color: rgb(233, 151, 0);
+    gap: 0.25rem;
+}
+
+.product-rating span {
+    color: rgb(117, 117, 117);
+}
+
+.product-bookmrak {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: rgba(173, 173, 173, 0.553);
+    color: rgba(83, 83, 83, 0.466);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    top: 3%;
+    right: 8%;
+    cursor: pointer;
+}
+
+.product-bookmrak:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+}
+
+.product-contant-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.product-contant-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: rgba(207, 207, 207, 0.553);
+    padding: 0.3rem;
+    color: rgba(145, 145, 145, 0.747);
+    padding-left: .75rem;
+}
+.product-contant-info div:first-child {
+    border-right: 1px solid rgba(143, 143, 143, 0.466);
+}
+
+
+.product-description p {
+    font-size: .9rem;
+    color: rgba(83, 83, 83, 0.616);
+    text-wrap: balance;
+}
+.product-instructor{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.product-instructor-img img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.product-instructor-name span:first-child {
+    font-size: .9rem;
+    color: rgba(83, 83, 83, 0.616);
+}
+.product-instructor-name {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid rgba(143, 143, 143, 0.466);    
+}
+.product-price {
+    color: rgb(233, 0, 89);
+    gap: 0.5rem;
+    display: flex;
+    justify-self: start;
+}
+.old-price {
+    color: rgba(83, 83, 83, 0.616);
+    text-decoration: line-through;
+}
+
+.more-details a{
+    color: rgba(83, 83, 83, 0.616);
+    cursor: pointer;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.more-details a:hover {
+    color: rgb(233, 0, 89);
+}
+
+.more-details a::after {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: x-small;
+    margin-left: 0.3rem;
+}
