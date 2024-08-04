@@ -1,0 +1,55 @@
+/* -------------------- importing font from google fonts -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+/* --------------- appling margin , padding , box-sizeing and font family to all elements --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --yellow: #ffae00;
+}
+/* ----------------- set section height and background color ---------------- */
+section {
+    background-color: antiquewhite;
+    height: 200vh;
+}
+
+
+.main-services-header {
+    color: rgba(0, 0, 0, 0.7);
+}
+.main-services-header::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    width: 7%;
+    height: 8%;
+    background-color: var(--yellow);
+    transform: translateX(-50%);
+}
+
+
+.services-icon {
+    background-color: var(--yellow);
+}
+
+.services-header {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 450;
+}
+
+.services-description {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 450;
+    text-wrap: balance;
+}
+
