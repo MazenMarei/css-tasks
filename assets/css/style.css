@@ -36,7 +36,15 @@ p {
   text-wrap: balance;
 }
 
-.card:nth-of-type(even) {
-  transform: translateY(100%);
+.featur-card:nth-of-type(even) {
+  transform: translateY(15%);
   transition: all 0.5s;
+}
+
+
+@media screen and (max-width: 768px) {
+  .featur-card:nth-of-type(even) {
+    transform: translateY(0%);
+  }
+  
 }
