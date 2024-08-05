@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  --bg-yellow: #f8c151;
+  --bg-orange: #f5955c;
+  --bg-pink: #db2a86;
+  --bg-drak-pink: #983cc0;
+}
+
+.featurs-header-grediant {
+  background: linear-gradient(
+    90deg,
+    var(--bg-yellow),
+    var(--bg-pink),
+    var(--bg-drak-pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.featur-icon {
+  background: linear-gradient(
+    90deg,
+    var(--bg-yellow),
+    var(--bg-pink),
+    var(--bg-drak-pink)
+  );
+}
+p {
+  text-wrap: balance;
+}
+
+.card:nth-of-type(even) {
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
