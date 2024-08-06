@@ -14,7 +14,18 @@ section {
   align-items: center;
   display: flex;
 }
+.about-us-image  {
+  box-shadow: 10px 10px 1px  var(--bg-yellow);
+ 
+  
+}
+.custome-border {
+  height: 5%;
+  bottom: -15%;
+  width: 60%;
+}
 
+/* 
 .cont {
   border: #000 1px solid;
   display: flex;
@@ -97,9 +108,7 @@ section {
   background-color: #f0b90b;
 }
 
-.text-box + img  {
-  box-shadow: 10px 10px 1px  var(--bg-yellow);
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -119,4 +128,4 @@ section {
     order: -1;
     width: 100%;
   }
-}
+} */
