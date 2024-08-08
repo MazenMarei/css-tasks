@@ -7,36 +7,37 @@
   box-sizing: border-box;
 }
 
-
 :root {
-  --dark : #18191D;
-  --blue : #0094DA;
-  --gray : #929A9C;
+  --dark: #18191d;
+  --blue: #0094da;
+  --gray: #929a9c;
 }
-
+body {
+  background-color: var(--dark);
+}
 section {
+  height: 100%;
+  border-bottom: #0094da 2px solid;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  width: 100%;
 }
 
 .loading-screen h1 {
   color: var(--blue);
- animation: fadeIn 4s linear 3; 
+  animation: fadeIn 4s linear 3;
 }
 
-
-.loading-screen  img {
-  animation: slideLeftAndFadeIn 3s ease , fadeIn 4s linear 3;;
+.loading-screen img {
+  animation: slideLeftAndFadeIn 3s ease, fadeIn 4s linear 3;
   transform: translateX(-85%);
   top: 39%;
 }
-.loading-screen{
+.loading-screen {
   overflow: hidden;
 }
 
-.head-news-nav  {
+.head-news-nav {
   background-color: var(--blue);
 }
 
@@ -48,30 +49,25 @@ section {
   background-color: var(--dark);
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-}
 #loading {
   background-color: var(--dark);
 }
 #loading .row {
   height: 100vh;
 }
-.nav-item{
+.nav-item {
   border-right-color: var(--blue) !important;
   position: relative !important;
 }
 
 .navbar a:hover {
   color: var(--blue) !important;
-  transition: color 0.5s; 
+  transition: color 0.5s;
   position: relative !important;
-
 }
 
-
 .active-item {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -82,6 +78,31 @@ section {
   transition: transform 0.5s;
 }
 
-.nav-item:hover  .active-item {
+.nav-item:hover .active-item {
   transform: scaleX(1);
 }
+
+.float-div-behinde-image {
+  position: absolute;
+  content: "";
+  height: 120%;
+  width: 15%;
+  background-color: var(--gray);
+  top: -10%;
+  left: 0%;
+  z-index: -1;
+}
+
+.float-div-after-image {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 25%;
+  border-left: 80px solid var(--blue);
+  border-bottom: 80px solid var(--blue);
+  top: 0%;
+  right: -15%;
+  z-index: -1;
+  animation: bouncingHero 4s infinite;
+}
+

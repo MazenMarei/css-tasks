@@ -4,4 +4,8 @@ $("ready" , () => {
             $("main").fadeIn(1000);
         } , 6000);    
         $("main").toggleClass("d-none");
+
+
+
+    
 })

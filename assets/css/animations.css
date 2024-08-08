@@ -37,3 +37,17 @@
     opacity: 1;
   }
 }
+
+
+@keyframes bouncingHero {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 25%;
+    }
+    100% {
+        top: 0;
+    }
+    
+}

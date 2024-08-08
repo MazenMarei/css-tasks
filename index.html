@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <!-- ----------------------- importing bootstrap css ----------------------- -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- ---------------------- importing custom css file ---------------------- -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -51,7 +63,7 @@
 
       <!-- ------------------------- start of main nav ------------------------ -->
       <div
-        class="navbar navbar-expand-lg justify-content-center sections-nav-bootem position-sticky top-0"
+        class="navbar navbar-expand-lg justify-content-center sections-nav-bootem position-sticky top-0 z-3 shadow"
       >
         <div class="container-fluid">
           <!-- ------------------------- logo and site name ------------------------- -->
@@ -60,8 +72,10 @@
             Racoon</a
           >
           <!-- ------------------------- logo and site name ------------------------- -->
+
+          <!-- -------------------------- extend nav button -------------------------- -->
           <button
-            class="navbar-toggler border-0"
+            class="navbar-toggler border-0 text-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#ariaExpandedNav"
@@ -69,69 +83,495 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars text-white"></i>
           </button>
+
+          <!-- -------------------------- extend nav button -------------------------- -->
+
+          <!-- ----------------------- nav items and collapse ------------------------ -->
           <div class="collapse navbar-collapse mx-auto" id="ariaExpandedNav">
+            <!-- ------------------------------ nav items ------------------------------ -->
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item border-end px-4">
+              <!-- ------------------------------ nav item ------------------------------- -->
+              <li class="nav-item border-end px-lg-3 px-md-2 px-sm-1 px-0">
                 <a
                   href="#"
-                  class="nav-link text-white text-capitalize fs-5 fw-medium"
-                  >home</a
+                  class="nav-link text-white text-capitalize fs-6 fw-light"
+                  ><i class="fas fa-home me-2"></i>home</a
                 >
                 <div class="active-item"></div>
               </li>
-              <li class="nav-item border-end px-4">
+              <!-- ------------------------------ nav item ------------------------------- -->
+              <li class="nav-item border-end px-lg-3 px-md-2 px-sm-1 px-0">
                 <a
                   href="#"
-                  class="nav-link text-white text-capitalize fs-5 fw-medium"
+                  class="nav-link text-white text-capitalize fs-6 fw-light"
                   >top of the year</a
                 >
                 <div class="active-item"></div>
               </li>
-              <li class="nav-item border-end px-4">
+              <!-- ------------------------------ nav item ------------------------------- -->
+
+              <li class="nav-item border-end px-lg-3 px-md-2 px-sm-1 px-0">
                 <a
                   href="#"
-                  class="nav-link text-white text-capitalize fs-5 fw-medium"
+                  class="nav-link text-white text-capitalize fs-6 fw-light"
                   >popular</a
                 >
                 <div class="active-item"></div>
               </li>
-              <li class="nav-item border-end px-4">
+              <!-- ------------------------------ nav item ------------------------------- -->
+
+              <li class="nav-item border-end px-lg-3 px-md-2 px-sm-1 px-0">
                 <a
                   href="#"
-                  class="nav-link text-white text-capitalize fs-5 fw-medium"
+                  class="nav-link text-white text-capitalize fs-6 fw-light"
                   >Genres</a
                 >
                 <div class="active-item"></div>
               </li>
-              <li class="nav-item border-end px-4">
+              <!-- ------------------------------ nav item ------------------------------- -->
+
+              <li class="nav-item border-end px-lg-3 px-md-2 px-sm-1 px-0">
                 <a
                   href="#"
-                  class="nav-link text-white text-capitalize fs-5 fw-medium"
+                  class="nav-link text-white text-capitalize fs-6 fw-light"
                   >subscribtion</a
                 >
                 <div class="active-item"></div>
               </li>
-              <li class="nav-item border-end px-4">
+              <!-- ------------------------------ nav item ------------------------------- -->
+
+              <li class="nav-item border-end px-lg-3 px-md-2 px-sm-1 px-0">
                 <a
                   href="#"
-                  class="nav-link text-white text-capitalize fs-5 fw-medium"
+                  class="nav-link text-white text-capitalize fs-6 fw-light"
                   >Release Calendar</a
                 >
                 <div class="active-item"></div>
               </li>
+              <!-- ------------------------------ nav item ------------------------------- -->
             </ul>
+            <!-- ------------------------------ nav items ------------------------------ -->
+
+            <!-- ---------------------------- login button ----------------------------- -->
             <button
-              class="btn btn-primary mx-auto px-5 py-2 rounded-5 mt-lg-0 mt-3 mt-sm-3"
+              class="btn btn-primary mx-auto px-5 py-2 rounded-5 mt-lg-0 mt-3 mt-sm-3 d-lg-block d-none"
             >
               Login
             </button>
+            <!-- ---------------------------- login button ----------------------------- -->
           </div>
+          <!-- ----------------------- nav items and collapse ------------------------ -->
         </div>
       </div>
       <!-- ------------------------- end of main nav ------------------------ -->
-      <section></section>
+
+      <!-- --------------------------- start of slider --------------------------- -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- ----------------------------- slider item ----------------------------- -->
+          <div class="carousel-item active position-relative">
+            <div class="container">
+              <div
+                class="row position-absolute top-50 start-25 image-float-box w-50 bg-primary text-end p-2 translate-middle d-none d-lg-block d-md-none d-sm-none"
+              >
+                <div class="row ms-auto w-50 text-center">
+                  <h1 class="text-white text-capitalize fw-bold">One Piece</h1>
+                  <p class="text-white fw-light text-wrap">
+                    One Piece is a Japanese manga series written and illustrated
+                    by Eiichiro Oda. It has been serialized in Shueisha's Weekly
+                    Shonen Jump magazine since July 22, 1997, and has been
+                    collected into 100 tankobon volumes. The story follows the
+                    adventures of Monkey
+                  </p>
+                </div>
+                <div class="row">
+                  <button class="btn btn-warning w-auto mx-auto">
+                    <i class="fas fa-play"></i> Whach Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/images/onepice.avif"
+              class="d-block w-100"
+              alt="onepice"
+            />
+          </div>
+          <!-- ----------------------------- slider item ----------------------------- -->
+          <div class="carousel-item position-relative">
+            <div class="container">
+              <div
+                class="row position-absolute top-50 start-25 image-float-box w-50 bg-primary text-end p-2 translate-middle d-none d-lg-block d-md-none d-sm-none"
+              >
+                <div class="row ms-auto w-50 text-center">
+                  <h1 class="text-white text-capitalize fw-bold">
+                    Demon Slayer
+                  </h1>
+                  <p class="text-white fw-light text-wrap">
+                    Demon Slayer: Kimetsu no Yaiba is a Japanese manga series
+                    written and illustrated by Koyoharu Gotouge. It follows
+                    Tanjiro Kamado, a young
+                  </p>
+                </div>
+                <div class="row">
+                  <button class="btn btn-warning w-auto mx-auto">
+                    <i class="fas fa-play"></i> Whach Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/images/demon-slayer.avif"
+              class="d-block w-100"
+              alt="onepice"
+            />
+          </div>
+          <!-- ----------------------------- slider item ----------------------------- -->
+          <div class="carousel-item position-relative">
+            <div class="container">
+              <div
+                class="row position-absolute top-50 start-25 image-float-box w-50 bg-primary text-end p-2 translate-middle d-none d-lg-block d-md-none d-sm-none"
+              >
+                <div class="row ms-auto w-50 text-center">
+                  <h1 class="text-white text-capitalize fw-bold">
+                    jujutsu kaisen
+                  </h1>
+                  <p class="text-white fw-light text-wrap">
+                    Jujutsu Kaisen is a Japanese manga series written and
+                    illustrated by Gege Akutami, serialized in Shueisha's Weekly
+                    Shonen Jump since March 2018. The individual chapters are
+                    collected and published by Shueisha, with thirteen tankobon
+                    volumes released as of October 2020.
+                  </p>
+                </div>
+                <div class="row">
+                  <button class="btn btn-warning w-auto mx-auto">
+                    <i class="fas fa-play"></i> Whach Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/images/jujutsu-kaisen.avif"
+              class="d-block w-100"
+              alt="onepice"
+            />
+          </div>
+          <!-- ----------------------------- slider item ----------------------------- -->
+          <div class="carousel-item position-relative">
+            <div class="container">
+              <div
+                class="row position-absolute top-50 start-25 image-float-box w-50 bg-primary text-end p-2 translate-middle d-none d-lg-block d-md-none d-sm-none"
+              >
+                <div class="row ms-auto w-50 text-center">
+                  <h1 class="text-white text-capitalize fw-bold">
+                    Attack on Titan
+                  </h1>
+                  <p class="text-white fw-light text-wrap">
+                    Attack on Titan is a Japanese manga series written and
+                    illustrated by Hajime Isayama. It is set in a world where
+                    humanity lives within territories surrounded by three
+                    enormous walls that protect them from gigantic
+                  </p>
+                </div>
+                <div class="row">
+                  <button class="btn btn-warning w-auto mx-auto">
+                    <i class="fas fa-play"></i> Whach Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/images/aot.avif"
+              class="d-block w-100"
+              alt="onepice"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- ---------------------------- end of slider ---------------------------- -->
+
+      <!-- ---------------- start of the top of the year section ----------------- -->
+      <section>
+        <div class="container-fluid justify-content-center items-algin-center">
+          <div class="row gap-5 p-lg-5 p-md-0 p-ms-0 p-0 pt-5 pt-md-5">
+            <div class="row mb-5">
+              <div class="col-12 text-center position-relative">
+                <h1 class="text-center text-capitalize text-primary fw-bold">
+                  Anime of the Year 2024
+                </h1>
+                <p
+                  class="text-white position-absolute mt-lg-0 mt-md-0 mt-2 mt-sm-2 start-50 translate-middle"
+                >
+                  Winner: JUJUTSU KAISEN Season 2
+                </p>
+              </div>
+            </div>
+            <div class="row my-5 row-gap-5">
+              <div
+                class="row col-lg-5 col-md-12 me-auto image-of-the-top-of-year-container position-relative mb-5 mx-auto"
+              >
+                <div class="float-div-behinde-image d-none d-lg-block"></div>
+                <img
+                  src="./assets/images/jujutsu-kaisen.avif"
+                  alt="jujutsu-kaisen"
+                  height="400px"
+                />
+                <div class="float-div-after-image d-none d-lg-block"></div>
+              </div>
+              <div class="row col-lg-5 col-md-12 mx-auto">
+                <h1 class="text-primary">JUJUTSU KAISEN Season 2</h1>
+                <p class="text-white fw-light">
+                  JUJUTSU KAISEN is a serialized manga series with story and
+                  artwork by Gege Akutami and published in Weekly Shonen Jump.
+                  An anime adaptation came shortly after, with animation handled
+                  by Studio MAPPA. Currently there are multiple seasons with
+                  Season 1 (24 episodes) being followed by the highly acclaimed
+                  prequel movie JUJUTSU KAISEN 0, and then Season 2 in July
+                  2023. The series is available subbed and dubbed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------- start of the top of the year section ----------------- -->
+
+      <!-- ---------------------- start of popular section ----------------------- -->
+      <section>
+        <div class="container-fluid">
+          <div class="row gap-5 p-lg-5 p-md-0 p-ms-0 p-0 pt-5 pt-md-5">
+            <!-- ----------------------------- haeder row ------------------------------ -->
+            <div class="row position-relative">
+              <h1 class="text-capitalize text-primary text-center fw-bold">
+                Most Popular Anime
+              </h1>
+              <p
+                class="text-white text-center position-absolute start-50 translate-middle top-100"
+              >
+                In 2024
+              </p>
+            </div>
+            <!-- ----------------------------- haeder row ------------------------------ -->
+
+            <div class="row">
+              <ul class="container">
+                <div class="row row-gap-5">
+                  <li
+                    class="d-flex flex-row col-lg-6 col-md-6 col-sm-12 col-12 gap-3 my-auto"
+                  >
+                    <img
+                      src="./assets/images/aot-profile.jpg"
+                      alt=""
+                      class="rounded-circle"
+                      width="100px"
+                    />
+                    <div class="row">
+                      <h1 class="text-primary">Attack on Titan</h1>
+                      <p class="text-white">
+                        Attack on Titan is a Japanese manga series written and
+                        illustrated by Hajime Isayama.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row col-lg-6 col-md-6 col-sm-12 col-12 gap-3 my-auto"
+                  >
+                    <img
+                      src="./assets/images/aot-profile.jpg"
+                      alt=""
+                      class="rounded-circle"
+                      width="100px"
+                    />
+                    <div class="row">
+                      <h1 class="text-primary">Attack on Titan</h1>
+                      <p class="text-white">
+                        Attack on Titan is a Japanese manga series written and
+                        illustrated by Hajime Isayama.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row col-lg-6 col-md-6 col-sm-12 col-12 gap-3 my-auto"
+                  >
+                    <img
+                      src="./assets/images/aot-profile.jpg"
+                      alt=""
+                      class="rounded-circle"
+                      width="100px"
+                    />
+                    <div class="row">
+                      <h1 class="text-primary">Attack on Titan</h1>
+                      <p class="text-white">
+                        Attack on Titan is a Japanese manga series written and
+                        illustrated by Hajime Isayama.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row col-lg-6 col-md-6 col-sm-12 col-12 gap-3 my-auto"
+                  >
+                    <img
+                      src="./assets/images/aot-profile.jpg"
+                      alt=""
+                      class="rounded-circle"
+                      width="100px"
+                    />
+                    <div class="row">
+                      <h1 class="text-primary">Attack on Titan</h1>
+                      <p class="text-white">
+                        Attack on Titan is a Japanese manga series written and
+                        illustrated by Hajime Isayama.
+                      </p>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- end of popular section ----------------------- -->
+
+      <!-- ----------------------- start of genres section ----------------------- -->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <!-- ----------------------------- header row ------------------------------ -->
+            <div class="row position-relative">
+              <h1 class="text-primary text-center fw-bold text-capitalize">
+                Genres
+              </h1>
+              <p
+                class="text-white text-capitalize text-center position-absolute start-50 translate-middle top-100"
+              >
+                What we have
+              </p>
+            </div>
+
+            <div class="row">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <ul class="row text-white justify-content-center gap-5">
+                <li class="btn w-auto text-white fs-5 fw-semibold">
+                  Advinture
+                </li>
+                <li class="btn w-auto text-white fs-5 fw-semibold">Action</li>
+                <li class="btn w-auto text-white fs-5 fw-semibold">Comedy</li>
+                <li class="btn w-auto text-white fs-5 fw-semibold">Fantasy</li>
+                <li class="btn w-auto text-white fs-5 fw-semibold">isaikai</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row"></div>
+        </div>
+      </section>
+
+      <!-- ----------------------- end of genres section ----------------------- -->
+
+      <!-- ------------------------- start of the footer ------------------------- -->
+      <footer class="bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <h1 class="text-primary">Racoon</h1>
+              <p class="text-white">
+                Racoon is a website that provides you with the latest news and
+                updates about the anime world. We provide you with the latest
+                news and updates about the anime world.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <h1 class="text-primary">Quick Links</h1>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Top of the Year</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Popular</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Genres</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Subscribtion</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Release Calendar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <h1 class="text-primary">Contact Us</h1>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Telegram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- ---------------------- importing J-Query js file ---------------------- -->
@@ -140,6 +580,11 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- ---------------------- importing fonts awsowm js ---------------------- -->
     <script src="./assets/js/all.min.js"></script>
+    <!-- ------------------------ importing slick js file ----------------------- -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <!-- ---------------------- importing custom js file ----------------------- -->
     <script src="./assets/js/script.js"></script>
