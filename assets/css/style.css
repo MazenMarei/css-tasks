@@ -8,9 +8,10 @@
 }
 
 :root {
-  --dark: #18191d;
-  --blue: #0094da;
-  --gray: #929a9c;
+  --dark: rgb(24, 25, 29);
+  --blue: rgb(0, 148, 218);
+  --blue-50: rgba(0, 149, 218, 0.25);
+  --gray: rgb(146, 154, 156);
 }
 body {
   background-color: var(--dark);
@@ -85,11 +86,11 @@ section {
 .float-div-behinde-image {
   position: absolute;
   content: "";
-  height: 120%;
+  height: 110%;
   width: 15%;
   background-color: var(--gray);
-  top: -10%;
-  left: 0%;
+  top: -5%;
+  left: 10%;
   z-index: -1;
 }
 
@@ -101,8 +102,42 @@ section {
   border-left: 80px solid var(--blue);
   border-bottom: 80px solid var(--blue);
   top: 0%;
-  right: -15%;
+  right: 0%;
   z-index: -1;
   animation: bouncingHero 4s infinite;
 }
 
+.carousel-item img {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+}
+
+.overlay {
+
+  background-color:var(--blue-50);
+}
+
+
+#carouselExample {
+  min-height: 30vh;
+  max-height: 85vh;
+}
+
+#carouselExample img {
+  min-height: 30vh !important;
+  max-height: 85vh !important;
+}
+
+.image-float-box {
+  top: 38%;
+  left: 0;
+}
+
+.top-of-the-year-image {
+  max-height: 500px;
+  min-width: 350px;
+  max-width: 500px;
+  margin: 0 auto; ;
+}

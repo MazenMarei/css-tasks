@@ -4,19 +4,19 @@
 
 @keyframes slideLeftAndFadeIn {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0%) !important;
   }
   30% {
-    transform: translateX(-85%);
+    transform: translateX(-85%) !important;
   }
 }
 
 @keyframes slideRightAndFadeIn {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
   100% {
-    transform: translateX(20%);
+    transform: translateX(20%) !important;
   }
 }
 
